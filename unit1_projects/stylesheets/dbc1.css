@@ -3,8 +3,34 @@ body {
    font-weight: 300;
 }
 
+h1, h2
+{
+	color: lightseagreen;
+	text-decoration: underline;
+}
+
 .section
 {
-	color: blue;
-	background-color: gray;
+	color: black;
+	background-color: gainsboro;
+	width: 600px;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+a:link
+{
+	color: lightseagreen;
+}
+
+a:visited
+{
+	color: burlywood;
+}
+
+#zach
+{
+	float: left;
+	padding: 10px;
 }
