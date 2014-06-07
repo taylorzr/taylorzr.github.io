@@ -1,0 +1,54 @@
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   color: #61380B;
+}
+
+h1, h2
+{
+    color: #8A0808;
+}
+
+#header
+{
+    clear: both;
+}
+
+#container
+{
+	float: center;
+    width: 90%;
+}
+
+#nav
+{
+	float: left;
+    margin: 2.5% 2.5%;
+	width: 20%;
+	background-color: lightgray;
+}
+
+#content
+{
+	float: left;
+    margin: 2.5% 2.5%;
+    width: 70%;  
+	background-color: lightgray;
+}
+
+#footer
+{
+    clear: both;
+}
+
+#about img
+{
+    float: left;
+    padding: 0px 10px 0px 5px;
+}
+
+.section
+{
+    padding: 5px 15px;
+    clear: both;
+}
