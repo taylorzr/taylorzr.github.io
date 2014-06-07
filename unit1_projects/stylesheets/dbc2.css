@@ -9,9 +9,16 @@ h1, h2
     color: #8A0808;
 }
 
-#header
+.section
+{
+    padding: 5px 15px;
+    clear: both;
+}
+
+#header, #footer
 {
     clear: both;
+    text-align: center
 }
 
 #container
@@ -20,35 +27,39 @@ h1, h2
     width: 90%;
 }
 
-#nav
+#nav, #content
 {
 	float: left;
-    margin: 2.5% 2.5%;
-	width: 20%;
+    margin: 0% 2.5%;
 	background-color: lightgray;
+}
+
+#nav
+{
+    width: 25%;
 }
 
 #content
 {
-	float: left;
-    margin: 2.5% 2.5%;
-    width: 70%;  
-	background-color: lightgray;
+    width: 65%;  
 }
 
-#footer
+#nav  ul
 {
-    clear: both;
+    list-style-type: none;
+    text-align: right;
+    margin: 0px;
+    padding: 0px;
 }
 
-#about img
+#nav li
+{
+    margin: 5px;
+    padding: 10px;
+}
+
+#about  img
 {
     float: left;
-    padding: 0px 10px 0px 5px;
-}
-
-.section
-{
-    padding: 5px 15px;
-    clear: both;
+    padding: 0px 10px 0px 0px;
 }
