@@ -25,14 +25,13 @@ article
 article section h2, h3
 {
 	margin-top: 20px;
-	margin-bottom: 5px;
 }
 
 article section p
 {
 	text-indent: 30px;
 	margin-left: 20px;
-	margin-top: 10px;
+	margin-top: 20px;
 
 }
 
@@ -95,6 +94,11 @@ footer a
 	bottom: 0;
 	font-size: 72px;
 	margin: 10px 30px;
+}
+
+#header-content a
+{
+	color: #333333;
 }
 
 #content
