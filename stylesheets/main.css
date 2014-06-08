@@ -5,7 +5,7 @@ body {
    margin: 0px;
 }
 
-a, article header, article h1, article h2
+a, h2, h3, article header
 {
 	color: #1975FF;
 	text-decoration: none;
