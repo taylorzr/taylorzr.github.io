@@ -1,20 +1,19 @@
-html, body {
+body {
    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    font-weight: 300;
    color: #333333;
-   height: 100%;
    margin: 0px;
 }
 
-a
+a, article header, article h1, article h2
 {
+	color: #1975FF;
 	text-decoration: none;
-	color: inherit;
 }
 
-article p
+article section p
 {
-	text-indent: 40px;
+	text-indent: 30px;
 	margin-left: 20px;
 
 }
@@ -47,21 +46,9 @@ footer a
 	text-decoration: none;
 }
 
-.colored
-{
-	color: #1975FF;
-}
-
 .light-text
 {
 	font-weight: lighter;
-}
-
-#wrapper
-{
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
 }
 
 #header
