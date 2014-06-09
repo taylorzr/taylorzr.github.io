@@ -9,6 +9,16 @@ h1, h2
     color: #8A0808;
 }
 
+a:link
+{
+    color: #8A0808; 
+}
+
+a:visited
+{
+    color: darkgray;
+}
+
 .section
 {
     padding: 5px 15px;
@@ -18,7 +28,8 @@ h1, h2
 #header, #footer
 {
     clear: both;
-    text-align: center
+    text-align: center;
+    color: #8A0808;
 }
 
 #container
@@ -31,7 +42,7 @@ h1, h2
 {
 	float: left;
     margin: 0% 2.5%;
-	background-color: lightgray;
+	background-color: white;
 }
 
 #nav
@@ -58,8 +69,23 @@ h1, h2
     padding: 10px;
 }
 
-#about  img
+#about img
 {
     float: left;
     padding: 0px 10px 0px 0px;
+}
+
+.captioned
+{
+    position: relative;
+}
+
+.caption
+{
+    position: absolute;
+    top: 80px;
+    left: 22px;
+    color: #8A0808;
+    background-color: white;
+    font-size: 11pt;
 }
