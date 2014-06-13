@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="../stylesheets/main.css"/>
 		<style>
 
-				#god {
+				.god {
 					position: fixed;
 					top: 20px;
 					right: 20px;
@@ -85,7 +85,7 @@
 
 					<p><em>Today, we're going to tell a story, a story about love, deception, greed, lust and ...unbridled enthusiasm. You see Elaine, Zach was a simple country boy. You might say a cockeyed optimist, who got himself mixed up in the high stakes game of world diplomacy and international intrigue. <strong>"Oh! my God"</strong> you say? Ah! Here we go.</em></p>
 
-					<div id="god"><img src="images/fsm.png" width="150"/><div>
+					<div class="god"><a href="http://en.wikipedia.org/wiki/Theological_noncognitivism" target="_blank"><img src="images/fsm.png" width="150"/></a><div>
 
 				</section>
 
@@ -93,9 +93,9 @@
 
 					<h2>Fixed Positioning</h2>
 
-					<p><strong>Fixed</strong> is the most straightfoward property of HTML elements. Fixed elements exist above the normal flow of the HTML universe, and their position is <strong>constant in relation to the bounds of the browser window.</strong> In other words, fixed elements are <a href="http://en.wikipedia.org/wiki/Theological_noncognitivism" target="_blank">Gods</a>.</p>
+					<p><strong>Fixed</strong> is the most straightfoward property of HTML elements. Fixed elements exist above the normal flow of the HTML universe, and their position is <strong>constant in relation to the bounds of the browser window.</strong> In other words, fixed elements are Gods.</p>
 
-					<p>And you may have already noticed God up there, top-right corner, keeping us inline. We can scroll down and scroll up, but God isn't moving. Try it! He's God, he's not moving. No matter what we mere mortals do, God's position is outside of our influence. In CSS, we would define God's position as: <code> #god { position: fixed; top: 20px; right: 20px; }</code>.</p>
+					<p>And you may have already noticed God up there, top-right corner, keeping us inline. We can scroll down and scroll up, but God isn't moving. Try it! He's God, he's not moving. No matter what we mere mortals do, God's position is outside of our influence. In CSS, we would define God's position as, <code> .god { position: fixed; top: 20px; right: 20px; }</code>.</p>
 
 				</section>
 
@@ -103,7 +103,7 @@
 
 					<h2>Relative Positioning</h2>
 
-					<p>Well God, being the creator, created the <strong>Relative</strong> property. God place elements with the relative property in the normal HTML universe. He gave them <strong>a home, and the ability to move around</strong>. Relative elements were called humans.</p>
+					<p>Well God, being the creator, created the <strong>Relative</strong> property. God placed elements with the relative property in the normal HTML universe. He gave them <strong>a home, and the ability to move around</strong>. Relative elements were called humans.</p>
 
 					<p>Humans always have a home, but they can move relative to their home in any direction. Well one day, God's blue human, Zach was hungry. He wandered East of his home hunting and gathering. It looked like this:</p>
 
@@ -121,7 +121,7 @@
 
 					<div class="container"> <div class="blue box static" style="left: 120px;"> </div> </div>
 
-					<p>In CSS we would define this as, <code> .house-arrest: { position: static; <strong>left: 120px;</strong> }</code>. Even when Zach tried to leave his home, God keeps him in place. Zach's position can not change relative to his home, but he still has his home.</p>
+					<p>In CSS we would define this as, <code> .house-arrest: { position: static; <strong>left: 120px;</strong> }</code>. Even when Zach tried to leave his home, God kept him in place. Zach's position can not change relative to his home, but at least he still has his home.</p>
 
 				</section>
 
@@ -129,11 +129,13 @@
 
 					<h2>Absolute Positiong</h2>
 
-					<p>One day, God got tired of keeping Zach inline. So he created the <strong>Absolute</strong> property. God returned blue human's <strong>ability to move, but took away his home</strong>. Seeing an oppurtunity to grab a swank new pad, red human moved in. Zach was now homeless.</p>
+					<p>One day, God got tired of keeping Zach inline. So he created the <strong>Absolute</strong> property. God returned Zach's <strong>ability to move, but took away his home</strong>. Seeing an opportunity to grab a swank new pad, red human moved in. Zach was now homeless.</p>
 
 					<div class="container"> <div class="blue box absolute" style="left: 120px"> </div> <div class="red box absolute"> </div> <div class="blue-border box absolute"> </div> </div>
 
-					<p>In CSS we would define this as, <code> .homeless: { position: absolute; left: 120px }</code>. Zach's position is realitve to where his home would be, but his home is not reserved for him while he's gone.</p>
+					<p>In CSS we would define this as, <code> .homeless: { position: absolute; left: 120px }</code>. Zach's position is relative to where his home would be, but his home is not reserved for him while he's gone.</p>
+
+					<p>So be careful with CSS positioning, things get complicated when you started messing with God.</p>
 
 				</section>
 
