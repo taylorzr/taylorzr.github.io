@@ -1,5 +1,4 @@
 * {
-
 	margin: 0;
 }
 
@@ -11,10 +10,14 @@ html, body {
    margin: 0px;
 }
 
-a, h2, h3, article header
-{
+a, h2, h3 {
 	color: #1975FF;
 	text-decoration: none;
+	transition: .5s;
+}
+
+a:hover {
+	color: red;
 }
 
 article
@@ -52,21 +55,11 @@ footer, .push
 footer
 {
 	width: 100%;
-	text-align: center;
 	padding-top: 13px;
+	text-align: center;
+	font-size: 0.875em;
 	background-color: #E6E6E6;
 
-}
-
-footer ul
-{
-	list-style-type: none;
-}
-
-footer li
-{
-	display: inline;
-	margin: 5px 20px 5px 20px;
 }
 
 footer a
@@ -104,4 +97,20 @@ footer a
 #content
 {
 	margin: 50px 50px 50px 200px; /*top right bottom left*/
+}
+
+.links {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+.links ul {
+	list-style-type: none;
+}
+
+.links li {
+	display: inline;
+	margin: 5px;
+	font-size: 1.5em;
 }
