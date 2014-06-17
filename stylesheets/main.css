@@ -13,104 +13,155 @@ html, body {
 a, h2, h3 {
 	color: #1975FF;
 	text-decoration: none;
-	transition: .5s;
+	transition: 0.3s;
 }
 
 a:hover {
 	color: red;
 }
 
-article
-{
-	margin-top: 30px;
+em {
+	font-style: oblique;
+	font-weight: 100;
+	color: gray;
 }
 
-article section h2, h3
-{
-	margin-top: 30px;
+strong {
+	font-weight: 700;
 }
 
-article section p
-{
-	text-indent: 30px;
-	margin-left: 20px;
-	margin-top: 20px;
-
+h1, h2, h3 {
+	font-weight: bold;
 }
 
-.wrapper
-{
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -43px
-
-}
-
-footer, .push
-{
-	height: 30px;
-}
-
-footer
-{
-	width: 100%;
-	padding-top: 13px;
-	text-align: center;
-	font-size: 0.875em;
-	background-color: #E6E6E6;
-
-}
-
-footer a
-{
-	color: #333333;
-	text-decoration: none;
-}
-
-.light-text
-{
-	font-weight: lighter;
-}
-
-#header
-{
-	position: relative;
-	width: 100%;
-	height: 200px;
-	box-shadow: 0 5px 5px 0px #888888;
-}
-
-#header-content
-{
-	position: absolute;
-	bottom: 0;
-	font-size: 72px;
-	margin: 10px 30px;
-}
-
-#header-content a
-{
-	color: #333333;
-}
-
-#content
-{
-	margin: 50px 50px 50px 200px; /*top right bottom left*/
-}
-
-.links {
-	position: absolute;
-	right: 20px;
-	bottom: 20px;
-}
-
-.links ul {
-	list-style-type: none;
-}
-
-.links li {
-	display: inline;
-	margin: 5px;
+h1 {
 	font-size: 1.5em;
 }
+
+h2 {
+	font-size: 1.25em;
+}
+
+h3 {
+	font-size: 1.125em;
+}
+
+.light {
+	font-weight: 100;
+}
+
+
+
+/* HEADER STYLES */
+
+	#header	{
+		position: relative;
+		width: 100%;
+		height: 200px;
+		background-color: #1A1A1A;
+		box-shadow: 0 5px 5px 0px #888888;
+	}
+
+	#header a {
+		color: white;
+		transition: 0.3s;
+	}
+
+	#header a:hover {
+		color: red;
+	}
+
+	#header h1 {
+		position: absolute;
+		left: 30px;
+		bottom: 15px;
+		font-size: 5em;
+		color: white;
+	}
+
+	.links {
+		position: absolute;
+		right: 20px;
+		bottom: 20px;
+	}
+
+	.links ul {
+		list-style-type: none;
+	}
+
+	.links li {
+		display: inline;
+		margin: 5px;
+		font-size: 1.5em;
+	}
+
+
+/* MAIN STYLES */
+
+	.wrapper {
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+		margin: 0 auto -45px
+	}
+
+	#content {
+		float: left;
+		width: 50%;
+		margin: 50px 5% 50px 15%;
+	}
+
+	#about {
+		float: right;
+		width: 20%;
+		padding: 2%;
+		margin: 50px 5% 50px auto;
+		border: 1px solid black;
+		border-radius: 10px;
+	}
+
+	#about h2 {
+		margin-bottom: 10px;
+	}
+
+	article {
+		margin-bottom: 30px;
+	}
+
+	article section h1, h2, h3 {
+		margin-bottom: 10px;
+	}
+
+	article section {
+		margin-bottom: 25px;
+	}
+
+	article section p {
+		text-indent: 30px;
+		margin-left: 20px;
+		margin-bottom: 15px;
+	}
+
+/* FOOTER STYLES */
+
+	footer, .push
+	{
+		clear: both;
+		height: 30px;
+	}
+
+	footer
+	{
+		width: 100%;
+		padding-top: 15px;
+		text-align: center;
+		font-size: 0.875em;
+		background-color: #E6E6E6;
+
+	}
+
+	footer a
+	{
+		color: #333333;
+		text-decoration: none;
+	}
