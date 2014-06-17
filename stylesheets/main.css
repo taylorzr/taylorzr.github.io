@@ -116,8 +116,9 @@ h3 {
 		width: 20%;
 		padding: 2%;
 		margin: 50px 5% 50px auto;
-		border: 1px solid black;
+		border: 1px solid gray;
 		border-radius: 10px;
+		text-align: justify;
 	}
 
 	#about h2 {
