@@ -39,14 +39,18 @@
 				<article>
 
 					<header>
-						<p><em>Posted by Zach <time pubdate datetime="2014-6-29">June 29th of 2014</time></em></p>
+						<p><em>Posted by Zach <time pubdate datetime="2014-6-29">June 19th of 2014</time></em></p>
 						<h1>Ruby Array#map</h1>
 					</header>
 
 					<section>
-                        <p>The ruby method <strong>map</strong> is a very useful builtin tool. It's the same as the method <strong>collect</strong>, and can be used interchangeably. Depeding on context, collect can be clearer than map, because the method runs a block of code over an enumerable object and <em>"collects"</em> the results. At first, I thought the method actually <em>"mapped"</em> the blocks result onto the object that called it, but that's not the case.</p>
                         
-                        <p>For example, you can call map on a hash, but it won't return a hash! It will return an array. </p>
+                        <p>The ruby method <strong>map</strong> is a very useful builtin tool. It's the same as the method <strong>collect</strong>, and can be used interchangeably. Depeding on context, collect can be clearer than map. Each method runs a block of code over an enumerable object and <em>"collects"</em> the results.</p>
+                        
+                        <p>We had a challenge this week, that required we use the same method to modify items in both an array and a hash. I initially started by using the method map. Map was a great choice for changing elements in an array and returning a new array: <br> <code>array.map{ |element| element += 1 }</code>. This is the same as: <code>new_array = []</code> and then <code>array.each{ |element| new_array.push( element += 1 }.</code></p>
+                        
+                        <p>At first, I thought the map method actually <em>"mapped"</em> the blocks result onto the object that called it, but that's not the case. For example, you can call map on a hash, but it won't return a hash, it will return an array! You can actually call map on any enumerable object.</p>
+                        
 					</section>
 
 				</article>
