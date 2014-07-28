@@ -61,15 +61,15 @@ CSS Positioning
 
 Today, we're going to tell a story, a story about love, deception, greed, lust and ...unbridled enthusiasm. You see Elaine, Zach was a simple country boy. You might say a cockeyed optimist, who got himself mixed up in the high stakes game of world diplomacy and international intrigue. <strong>"Oh! my God"</strong> you say? Ah! Here we go.
 
-<div class="god"><a href="http://en.wikipedia.org/wiki/Theological_noncognitivism" target="_blank"><img src="images/fsm.png" width="150"/></a></div>
+<div class="god"><a href="http://en.wikipedia.org/wiki/Theological_noncognitivism" target="_blank"><img src="/assets/fsm.png" width="150"/></a></div>
 
 
 Fixed Positioning
 -----------------
 
-	<p><strong>Fixed</strong> is the most straightfoward property of HTML elements. Fixed elements exist above the normal flow of the HTML universe, and their position is <strong>constant in relation to the bounds of the browser window.</strong> In other words, fixed elements are Gods.</p>
+**Fixed** is the most straightfoward property of HTML elements. Fixed elements exist above the normal flow of the HTML universe, and their position is **constant in relation to the bounds of the browser window**. In other words, fixed elements are Gods.
 
-	<p>And you may have already noticed God up there, top-right corner, keeping us inline. We can scroll down and scroll up, but God isn't moving. Try it! He's God, he's not moving. No matter what we mere mortals do, God's position is outside of our influence. In CSS, we would define God's position as, <code> .god { position: fixed; top: 10px; right: 20px; }</code>.</p>
+And you may have already noticed God up there, top-right corner, keeping us inline. We can scroll down and scroll up, but God isn't moving. Try it! He's God, he's not moving. No matter what we mere mortals do, God's position is outside of our influence. In CSS, we would define God's position as `.god { position: fixed; top: 10px; right: 20px; }`.
 
 
 Relative Positioning
@@ -97,7 +97,7 @@ In CSS we would define this as, `.house-arrest: { position: static; left: 120px;
 Absolute Positiong
 ------------------
 
-One day, God got tired of keeping Zach inline. So he created the **Absolute** property. God returned Zach's **ability to move, but took away his home**. Seeing an opportunity to grab a swank new pad, red human moved in. Zach was now homeless:</p>
+One day, God got tired of keeping Zach inline. So he created the **Absolute** property. God returned Zach's **ability to move, but took away his home**. Seeing an opportunity to grab a swank new pad, red human moved in. Zach was now homeless:
 
 <div class="container"> <div class="blue box absolute" style="left: 120px"> </div> <div class="red box absolute"> </div> <div class="blue-border box absolute"> </div> </div>
 

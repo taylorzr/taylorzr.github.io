@@ -14,12 +14,12 @@ We'd start by describing the category. All cars have a make, model, year, and co
 
 {% highlight ruby %}
 class Car
-       def initialize(make, model, year, color)
-         @make = make
-         @model = model
-         @year = year
-         @color = color
-       end
+  def initialize(make, model, year, color)
+    @make = make
+    @model = model
+    @year = year
+    @color = color
+  end
 end
 {% endhighlight %}
 
@@ -35,20 +35,20 @@ Besides class variables, we can also use class methods. If class variables are w
 
 {% highlight ruby %}
 class Car
-   def initialize(make, model, year, color)
-     @make = make
-     @model = model
-     @year = year
-     @color = color
-   end
+  def initialize(make, model, year, color)
+    @make = make
+    @model = model
+    @year = year
+    @color = color
+  end
 
-   def start
-      puts "click click ... purr purr purr"
-   end
+  def start
+    puts "click click ... purr purr purr"
+  end
 	
-   def accelerate
-      puts "vroooom"
-   end
+  def accelerate
+    puts "vroooom"
+  end
 end
 {% endhighlight %}
 
@@ -56,10 +56,10 @@ Now we're getting somewhere. We haven't completely modeled a car, but we have th
 
 {% highlight ruby %}
 wrx.start
-# => "click click ... purr purr purr"
+# > "click click ... purr purr purr"
 
 wrx.accelerate
-# => "vroooom"
+# > "vroooom"
 {% endhighlight %}
 
 And we're off. Just keep in mind, class variables are what an object is, and class methods are what an object does.

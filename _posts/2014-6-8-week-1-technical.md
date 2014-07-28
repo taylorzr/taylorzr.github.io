@@ -11,7 +11,7 @@ Favorite Websites
 I had a little trouble thinking of my three favorite websites. I'm often browsing the internets, so that's not the problem. I think it's because I use and like many different websites, but don't really have too many strong favorites. As long as the content is there, I can forgive the experience and design.
 
 
-###[![Google Search](images/google-logo.png)](http://google.com)
+### [![Google Search](/assets/google-logo.png){:width="400"}](http://google.com)
 
 The internets, and the way to find stuff on the internets, has absolutely revolutionized life. As a naturally inquisitive mind, I can find an answer to that random thought, or learn how to do almost anything.
 
@@ -22,14 +22,14 @@ It's more than just the Google search website. The chrome omnibox means you can 
 Yet, I think the design is quasi-ugly. The logo looks like alphabet soup fell out of a pinata. The red navigation elements, blue links, and green addresses stick with the theme, but it doesn't look good. It's a bit cluttered, especially when you're logged in and have your Google profile at the top right on top of everything else. In the end it doesn't really matter, because despite how the data is painted, it's fast and easy to scan, read and find what you're looking for. And that's the point.
 
 
-###[![YouTube](images/youtube-logo.png)](http://youtube.com)
+### [![YouTube](/assets/youtube-logo.png){:width="400"}](http://youtube.com)
 
 The YouTube experience for me is twofold. There is search, for when I'm looking for something specific, and there is my feed, for when I want to explore. Basically, all the same points of Google search apply to YouTube search. The *What to watch* feed is a bit different. It moves YouTube from just a video search engine, to a mini-television. It does a great job listing recommended videos and subscribed channels. And who could pass up wasting countless hours watching videos of cats and car wrecks.
 
 Much alike Google search, the design of YouTube feels a bit cluttered. I think it comes down to not being enough white space. I've frequently scanned right past some video or channel I was looking for. It's very similar to the Google search design, but for some reason I don't think it's as ugly. Maybe the screenshots of each video help.
 
 
-###[![Google Keep](images/keep-logo.png)](http://keep.google.com)
+### [![Google Keep](/assets/keep-logo.jpg){:width="400"}](http://keep.google.com)
 
 Although Google Keep has earned a bronze medal in my web olympics, I think the experience and design is the best of the bunch. It takes runner up to Google search and YouTube because although it's useful, it's not as important to me as the other two.
 
