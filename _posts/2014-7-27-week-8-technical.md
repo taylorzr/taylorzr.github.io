@@ -59,7 +59,7 @@ blade_runner.save
 blade_runner.update(director: ridley_scott)
 {% endhighlight %}
 
-Once data has been created a saved to the database, Active Record supports queryies through the `find_by` and `where` methods. The former returns the first result matching the query, the latter returns all results matching the query:
+Once data has been created and saved to the database, Active Record supports queryies through the `find_by` and `where` methods. The former returns the first result matching the query, the latter returns all results matching the query:
 
 {% highlight ruby %}
 movie = Movie.find_by(title: "Blade Runner")
