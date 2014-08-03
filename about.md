@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Howdy partner! 
+--------------
+I'm Zach, currently a student attending Devbootcamp Chicago. I've been teaching myself coding for the last 5-ish years and I've finally decided to jump head first into launching new career. This website contains articles covering the technical and cultural aspects of the Devbootcamp process.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Please contact me with any comments or questions at [taylorzr@gmail.com](mailto:taylorzr@gmail.com).
