@@ -7,7 +7,6 @@ categories: devbootcamp cultural
 
 Problems in Wonderland
 ----------------------
-
 One big problem in the tech world is regulation. Technology is evolving quicker than we can imagine, but it's coming up against a slow if not unmoving giant. There are many problems that technology can solve, but sometimes governments aren't ready for the solution.
 
 For example, Lyft and Uber have both made it easy for people with cars to offer a ride. But some cities, especially those that charge 1 million dollars or more aren't going to make it that easy. There is just no way you can not make waves creating an alternative to a business that takes a million dollar buy in.

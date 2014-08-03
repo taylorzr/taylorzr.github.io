@@ -7,7 +7,6 @@ categories: devbootcamp cultural
 
 The Value of Values
 -------------------
-
 It's taken me a while to figure out who I am, and I'm still discovery how to deal with myself but I've come a long way. If I think back about what makes me feel best about myself, it has to self-reliance. I love being able to figure out and do things myself. It makes me feel great to be able to take on tasks, figure them out and learn something in the process.
 
 

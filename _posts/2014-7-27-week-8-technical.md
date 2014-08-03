@@ -4,9 +4,8 @@ title: Week 8 - Technical
 categories: devbootcamp technical
 ---
 
-ActiveRecord
+Active Record
 ------------
-
 [Active Record][1] is concept for linking objects in a programming language to data stored in a database. It was [coined and described][2] by Martin Fowler in 2003 book *Patterns of Enterprise Application Architecture*. The concept has been implemented in multiple languages, but in ruby this concept is implemented by [the ActiveRecord gem][3]. 
 
 Without active record, a ruby programmer would typically use another module, such as [sqlite3][4] to execute sql queries. Active Record provides ruby methods that simplify common [CRUD][5] practices. We can use active record to easily create classes that represent a database table, and objects that represent a database row. Data can then be accessed, updated and deleted directly from the ruby objects.

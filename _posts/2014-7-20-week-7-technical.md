@@ -7,7 +7,6 @@ categories: devbootcamp technical
 
 SQL vs NoSQL
 ------------
-
 It's mildly difficult to write about the advantages and disadvantages of SQL vs NoSQL databases but I find this topic very interesting. However, even to a newbie there are some differences that seem like they'll be significant.
 
 The difference between SQL and NoSQL is like the difference between static and dynamic programming languages. In a staic programming language, an object is created with specific type, and in SQL databases columns are created with specific types. If you try to assign a string object an integer value, the compiler will raise an error. With SQL databases, if you try to insert an integer value into a string column, the database will raise an error.

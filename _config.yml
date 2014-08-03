@@ -10,3 +10,4 @@ github_username:  taylorzr
 # Build settings
 markdown: kramdown
 permalink: pretty
+paginate: 6

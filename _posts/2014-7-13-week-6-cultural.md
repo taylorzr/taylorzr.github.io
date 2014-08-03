@@ -7,7 +7,6 @@ categories: devbootcamp cultural
 
 The Stereotype Threat
 ---------------------
-
 I find the stereotype threat very interesting despite not really believing I've been negatively affected by sterotyping. The only thing I can think of is that I was always a short scrawny kid. In my childhood, I guess this was a difference significant enough to outcast me. I associated with other outcasts, nerdy, weird and different despite being a typical "priviledged" white kid.
 
 However, I don't believe that stereotyping affected my performance in any negative way. If anything it made me try harder. As a short scrawny little punk, I wasn't expected to perform well in sports. Yet, I played on a select soccer team for years, and played basketball with my friends. I wasn't half bad and could keep up the game despite my height deficiency.

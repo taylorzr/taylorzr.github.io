@@ -2,63 +2,13 @@
 layout: post
 title: Week 2 - Technical
 categories: devbootcamp technical
+css:
 ---
+
 
 
 CSS Positioning
 ---------------
-
-<style>
-	.god {
-			position: fixed;
-			top: 10px;
-			right: 20px;
-			-webkit-filter: drop-shadow(0px 5px 25px rgba(215,215,0,1));
-	}
-
-	.container {
-		position: relative;
-		width: 210px;
-		height: 100px;
-		margin: 20px;
-		padding: 10px;
-		background-color: lightgray;
-	}
-
-	.box {
-		position: relative;
-		width: 100px;
-		height: 100px;
-	}
-
-	.blue {
-		background-color: #1975FF;
-	}
-
-	.blue-border {
-		border: 3px dashed #1975FF;
-		box-sizing: border-box;
-	}
-
-	.red {
-		background-color: red;
-	}
-
-	.static {
-		position: static;
-	}
-
-	.absolute {
-		position: absolute;
-	}
-
-	.fixed {
-		position: fixed;
-	}
-
-</style>
-
-
 Today, we're going to tell a story, a story about love, deception, greed, lust and ...unbridled enthusiasm. You see Elaine, Zach was a simple country boy. You might say a cockeyed optimist, who got himself mixed up in the high stakes game of world diplomacy and international intrigue. <strong>"Oh! my God"</strong> you say? Ah! Here we go.
 
 <div class="god"><a href="http://en.wikipedia.org/wiki/Theological_noncognitivism" target="_blank"><img src="/assets/fsm.png" width="150"/></a></div>
@@ -109,3 +59,52 @@ So be careful with CSS positioning, things get complicated when you started mess
 * Relative maintains an elements home space, but allows the element movement.
 * Absolute eliminates an elements home space, while allowing the element movement.
 * Fixed locks an element to browser window, out of the html flow.
+
+<style>
+	.god {
+		position: fixed;
+		top: 15px;
+		right: 25px;
+		-webkit-filter: drop-shadow(0px 5px 25px rgba(215,215,0,1));
+	}
+
+	.container {
+		position: relative;
+		width: 210px;
+		height: 100px;
+		margin: 20px;
+		padding: 10px;
+		background-color: lightgray;
+	}
+
+	.box {
+		position: relative;
+		width: 100px;
+		height: 100px;
+	}
+
+	.blue {
+		background-color: #1975FF;
+	}
+
+	.blue-border {
+		border: 3px dashed #1975FF;
+		box-sizing: border-box;
+	}
+
+	.red {
+		background-color: red;
+	}
+
+	.static {
+		position: static;
+	}
+
+	.absolute {
+		position: absolute;
+	}
+
+	.fixed {
+		position: fixed;
+	}
+</style>
