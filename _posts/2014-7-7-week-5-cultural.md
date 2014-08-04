@@ -7,7 +7,6 @@ categories: devbootcamp cultural
 
 Peer Pairing
 ------------
-
 I definitely see a benefit of peer pairing, especially from a perspective of communication. It's hard to discuss how to solve challenges, and adding all the terminology of multiple programming languages doesn't make it any easier. I see pairing as a great tool to develop the ability to communicate effectively.
 
 But I'm not sold on peer pairing to solve problems. I'm not sure if I'm still getting used to it, or if my mind just doesn't work very well while partnering. I feel uncomfortable, and not at my best. I don't really feel the same sense of accomplishment as I do when solving problems myself. And the differences in coding experience make pairing completely different every time.

@@ -7,7 +7,6 @@ categories: devbootcamp technical
 
 Ruby Classes
 ------------
-
 Classes are an integral concept of object oriented programming. They are categories that group similar objects. All the objects within a class are similar, they have the same features, and the same capabilites. For instance, a Car is real world category. So say we wanted to create a class for cars in Ruby. How would we achieve this?
 
 We'd start by describing the category. All cars have a make, model, year, and color. These features are called class variables in Ruby. The features of our class are set by a special method named initialize. This method is called any time a Car is created. So, this is what a basic Car Class would look like written in Ruby:

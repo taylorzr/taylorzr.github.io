@@ -6,7 +6,6 @@ categories: devbootcamp cultural
 
 It's a Hard Knock Life
 ----------------------
-
 So... Life's been a bit crazy recently. Just like the rest of my devbootcampers, I recently made the decision to quit my job and jump head first into starting a new career, but it doesn't stop there. I got married in April, and shortly after my wife's 16 year old son moved away from his father, and into our home.
 
 He wasn't getting along with his father, and wasn't doing well in school. When he moved in, we laid down some basic rules and at first everything went fairly well. He was respectful and started doing a little better in school, but there were, and definitely still are some deep emotional problems. One day a month or so in, he just blew up, told my wife off and said he was moving out. It was a shock to us and came completely out of the blue.

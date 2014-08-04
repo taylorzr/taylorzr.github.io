@@ -7,7 +7,6 @@ categories: devbootcamp cultural
 
 OOF: Object-Oriented versus Functional
 --------------------------------------
-
 Programming is a process of describing a series of instructions. There are at least two ways to conceptualize this process, object-oriented and functional. Object oriented programming is primarily concerned with things, whle functional programming is primarily concerned with actions.
 
 For example, with object-oriented programming you would group code into things, or classes:

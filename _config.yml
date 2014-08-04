@@ -1,5 +1,5 @@
 # Site settings
-title: ZaTa
+title: ZATA
 email: taylorzr@gmail.com  
 description: "A weird kid's blog about the devbootcamp experience covering technical aspects of ruby, javascript, css, and html, and the corresponding emotional battles of working, learning and starting a family all at the same time."
 baseurl: ""
@@ -10,3 +10,4 @@ github_username:  taylorzr
 # Build settings
 markdown: kramdown
 permalink: pretty
+paginate: 6

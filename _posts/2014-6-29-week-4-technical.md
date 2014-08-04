@@ -7,7 +7,6 @@ categories: devbootcamp technical
 
 Ruby Array#map
 --------------
-
 The ruby method **map** is a very useful builtin tool. It's the same as the method **collect**, and can be used interchangeably. Depeding on context, collect can be clearer than map. Each method runs a block of code over an enumerable object and *"collects"* the results.
 
 We had a challenge this week, that required we use the same method to modify items in both an array and a hash. I initially started by using the method map. Map was a great choice for changing elements in an array and returning a new array: `array.map{ |element| element += 1 }`. This is the same as: `new_array = []` and then `array.each{ |element| new_array.push( element += 1 }`.
