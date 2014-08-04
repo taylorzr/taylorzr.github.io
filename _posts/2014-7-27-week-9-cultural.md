@@ -9,15 +9,12 @@ If my answers frighten you, then you should cease asking scary questions
 Some say there are no stupid questions, and while they may be correct, some questions are certainly better than others. It's not the problem itself that is the issue, it's the way the question of how to solve the problem is communicated. So what makes a good question?
 
 1. Context
-==========
 You need to start with context. Describe your environment, things like the operating system you're using, the languages, and the versions. Context also includes a summary of what you're trying to achieve. Providing context let's other put themselves in your shoes and understand what your trying to achieve, and what problems you're having. 
 
 2. Examples
-===========
 After setting up the context, you need to provide example(s). This doesn't mean you paste 200 lines of poorly indented ruby code. You should reduce the problem to the smallest example you can imagine. I would guess half the time, if you simplify the problem, you'll probably figure it out on your own. 
 
 3. Ease
-=======
 Overall, you should do everything you can to make the question easy to answer. This primarily means making your example simple. But it also includes providing a fully working example, and better yet a link to a web service that runs the code.
 
 A Bad Question?
