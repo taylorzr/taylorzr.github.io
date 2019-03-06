@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='I&rsquo;ve been working with databases quite a bit recently. Usually these databases are temporary forks used for testing, and they only have an ip address. It gets hard to keep track of which ip is which, and I&rsquo;m always worried running the wrong command on an actual production database.
+So I came up with this shell function db, used like db $ZACH_DB_URL. When run this connects psql to that database, and give me a prompt like ZACH@127.'>
+
+<meta property='og:title' content='Inject psql prompt • Back and forth'>
+<meta property='og:description' content='I&rsquo;ve been working with databases quite a bit recently. Usually these databases are temporary forks used for testing, and they only have an ip address. It gets hard to keep track of which ip is which, and I&rsquo;m always worried running the wrong command on an actual production database.
+So I came up with this shell function db, used like db $ZACH_DB_URL. When run this connects psql to that database, and give me a prompt like ZACH@127.'>
+<meta property='og:url' content='http://taylorzr.github.io/posts/inject_psql_prompt/'>
+<meta property='og:site_name' content='Back and forth'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts'><meta property='article:tag' content='shell'><meta property='article:tag' content='postgres'><meta property='article:tag' content='direnv'><meta property='article:published_time' content='2019-03-06T12:55:24-06:00'/><meta property='article:modified_time' content='2019-03-06T12:55:24-06:00'/><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.34" />
+
+  <title>Inject psql prompt • Back and forth</title>
+  <link rel='canonical' href='http://taylorzr.github.io/posts/inject_psql_prompt/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.f0e8df71.css'><link rel='stylesheet' href='/css/custom.css'>
+</head>
+
+
+<body class='page type-posts'>
+  <div class='site'>
+
+    <a class='screen-reader' href='#main'>Skip to Content</a>
+
+    <header id='header' class='header-container'>
+      <div class='header site-header'>
+        <nav id='main-menu' class='main-menu-container' aria-label='Main Menu'>
+  <ul class='main-menu'>
+  <li>
+      <a href='/'>home</a>
+    </li>
+  <li>
+      <a href='/tags/til'>til</a>
+    </li>
+  
+  </ul>
+</nav>
+
+        <div class='header-info'>
+          
+          <p class='site-title title'>Back and forth</p>
+          
+          <p class='site-description subtitle'>Pseudorandom thought recorder</p>
+        </div>
+      </div>
+    </header>
+
+
+<main id='main' class='main'>
+  <article lang='en' class='entry'>
+    <header class='header-container'>
+  <div class='header entry-header'>
+    <div class='header-info'>
+      <h1 class='title'>Inject psql prompt</h1>
+      
+
+    </div>
+    
+<div class='meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader'>Posted on </span>
+  <time class='date' datetime='2019-03-06T12:55:24-06:00'>2019, Mar 06</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+2 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+    
+    
+
+    <div class='entry-content'>
+  <p>I&rsquo;ve been working with databases quite a bit recently. Usually these databases are temporary forks
+used for testing, and they only have an ip address. It gets hard to keep track of which ip is which,
+and I&rsquo;m always worried running the wrong command on an actual production database.</p>
+
+<p>So I came up with this shell function <code>db</code>, used like <code>db $ZACH_DB_URL</code>. When run this connects psql
+to that database, and give me a prompt like <code>ZACH@127.0.0.1 &gt; _</code>. This makes it obvious what database
+I&rsquo;m connected to. This is how it works.</p>
+
+<p>Simple psql prompt:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#75715e">-- ~/.psqlrc
+</span><span style="color:#75715e">-- `prompt` gets passed in via the shell function `db`
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#66d9ef">set</span> PROMPT1 <span style="color:#e6db74">&#39;%:prompt:@%M &gt; &#39;</span></code></pre></div>
+<p>Shell function:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># ~/.zshrc
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> db<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+  local url_var prompt url
+  url_var<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>env | grep _DB_URL | grep <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> | cut -d <span style="color:#e6db74">&#39;=&#39;</span> -f <span style="color:#ae81ff">1</span><span style="color:#66d9ef">)</span>
+  prompt<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>echo $url_var | cut -d <span style="color:#e6db74">&#39;=&#39;</span> -f <span style="color:#ae81ff">1</span> | sed <span style="color:#e6db74">&#39;s/_DB_URL//g&#39;</span><span style="color:#66d9ef">)</span>
+  url<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>print -rl -- <span style="color:#e6db74">${</span>(P)url_var<span style="color:#e6db74">}</span><span style="color:#66d9ef">)</span>
+  psql -v <span style="color:#e6db74">&#34;prompt=</span>$prompt<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$url<span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<p>I used direnv for setting envs in specific project directories. Most of the connection information
+is the same, so I just set host, and loop over each host exporting env vars. The env vars must end
+in <code>_DB_URL</code> for the shell function to pick them up.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># ~/code/&lt;some-project/.envrc
+</span><span style="color:#75715e"></span>
+fork_prefix<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;postgres://&lt;user&gt;:&lt;password&gt;@&#39;</span>
+fork_suffix<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;:5432/&lt;database&gt;&#39;</span>
+
+declare -A databases
+databases<span style="color:#f92672">[</span>ZACH_1<span style="color:#f92672">]=</span><span style="color:#e6db74">&#39;127.0.0.1&#39;</span>
+databases<span style="color:#f92672">[</span>ZACH_2<span style="color:#f92672">]=</span><span style="color:#e6db74">&#39;127.0.0.2&#39;</span>
+databases<span style="color:#f92672">[</span>ZACH_3<span style="color:#f92672">]=</span><span style="color:#e6db74">&#39;127.0.0.3&#39;</span>
+
+<span style="color:#66d9ef">for</span> key in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>!databases[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">do</span>
+  export <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>key<span style="color:#e6db74">}</span><span style="color:#e6db74">_DB_URL=</span><span style="color:#e6db74">${</span>fork_prefix<span style="color:#e6db74">}${</span>databases[$key]<span style="color:#e6db74">}${</span>fork_suffix<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">done</span>
+
+<span style="color:#75715e"># Can also just set full urls
+</span><span style="color:#75715e"></span>export ZACH_DB_URL<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;postgres://localhost&#39;</span></code></pre></div>
+<p>Usage:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ db $ZACH_DB_URL
+psql <span style="color:#f92672">(</span><span style="color:#ae81ff">9</span>.4.11, server <span style="color:#ae81ff">9</span>.4.11<span style="color:#f92672">)</span>
+Type <span style="color:#e6db74">&#34;help&#34;</span> <span style="color:#66d9ef">for</span> help.
+
+ZACH@localhost &gt; <span style="color:#66d9ef">select</span> <span style="color:#e6db74">&#39;Hello World!&#39;</span> as greeting;
+   greeting
+--------------
+ Hello World!
+<span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> row<span style="color:#f92672">)</span>
+
+ZACH@localhost &gt;</code></pre></div>
+</div>
+
+    
+<footer class='entry-footer-container'>
+  <div class='entry-footer'>
+  <div class='tags'>
+  <span class='taxonomyTerm-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+</span>
+  <span class='screen-reader'>Tags: </span><a class='tag' href='/tags/shell'>Shell</a>, <a class='tag' href='/tags/postgres'>Postgres</a>, <a class='tag' href='/tags/direnv'>Direnv</a></div>
+
+  </div>
+</footer>
+
+
+  </article>
+  
+<nav class='entry-nav-container'>
+  <div class='entry-nav'><div class='prev-entry'>
+      <a href='/posts/whiches/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader'>Previous post: </span>![Sand]whiches</a>
+    </div></div>
+</nav>
+
+  
+</main>
+
+    <footer id='footer' class='footer-container'>
+      <div class='footer'>
+        <div class='social-menu-container'>
+  <nav aria-label='Social Menu'>
+    <ul class='social-menu'><li>
+        <a href='https://github.com/taylorzr' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:taylorzr@gmail.com' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/taylorzr' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path stroke-width="1.8" d="m5.839218,4.101561c0,1.211972 -0.974141,2.194011 -2.176459,2.194011s-2.176459,-0.982039 -2.176459,-2.194011c0,-1.211094 0.974141,-2.194011 2.176459,-2.194011s2.176459,0.982917 2.176459,2.194011zm0.017552,3.94922l-4.388022,0l0,14.04167l4.388022,0l0,-14.04167zm7.005038,0l-4.359939,0l0,14.04167l4.360816,0l0,-7.370999c0,-4.098413 5.291077,-4.433657 5.291077,0l0,7.370999l4.377491,0l0,-8.89101c0,-6.915523 -7.829986,-6.66365 -9.669445,-3.259423l0,-1.891237z"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</div>
+        <div class='copyright'>
+  <p>
+        
+          
+        
+      
+
+       &copy; 2018-2019 Zach Taylor 
+  </p>
+</div>
+
+      </div>
+    </footer>
+
+  </div><script src='/assets/js/main.5871befd.js'></script><script src='/js/custom.js'></script></body>
+
+</html>
+

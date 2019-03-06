@@ -5,10 +5,20 @@
     <link>http://taylorzr.github.io/</link>
     <description>Recent content on Back and forth</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 14 Feb 2019 09:31:52 -0600</lastBuildDate>
+    <lastBuildDate>Wed, 06 Mar 2019 12:55:24 -0600</lastBuildDate>
     
 	<atom:link href="http://taylorzr.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Inject psql prompt</title>
+      <link>http://taylorzr.github.io/posts/inject_psql_prompt/</link>
+      <pubDate>Wed, 06 Mar 2019 12:55:24 -0600</pubDate>
+      
+      <guid>http://taylorzr.github.io/posts/inject_psql_prompt/</guid>
+      <description>I&amp;rsquo;ve been working with databases quite a bit recently. Usually these databases are temporary forks used for testing, and they only have an ip address. It gets hard to keep track of which ip is which, and I&amp;rsquo;m always worried running the wrong command on an actual production database.
+So I came up with this shell function db, used like db $ZACH_DB_URL. When run this connects psql to that database, and give me a prompt like ZACH@127.</description>
+    </item>
     
     <item>
       <title>![Sand]whiches</title>
@@ -17,9 +27,9 @@
       
       <guid>http://taylorzr.github.io/posts/whiches/</guid>
       <description>which is a useful tool to find the path of an executable, eg:
-$ which ruby /Users/ztaylo43/.rubies/ruby-2.4.4/bin/ruby  which also has an -a flag which shows all executables, eg:
-$ which -a ruby /Users/ztaylo43/.rubies/ruby-2.4.4/bin/ruby /usr/bin/ruby  And ruby provides the same for gems, eg:
-$ gem which rspec /Users/ztaylo43/.gem/ruby/2.4.4/gems/rspec-3.8.0/lib/rspec.rb  This can be super helpful for those times when you&amp;rsquo;re debugging, and desperation leads you to follow the stacktrace into gemland.</description>
+$ which ruby /Users/ztaylo43/.rubies/ruby-2.4.4/bin/ruby which also has an -a flag which shows all executables, eg:
+$ which -a ruby /Users/ztaylo43/.rubies/ruby-2.4.4/bin/ruby /usr/bin/ruby And ruby provides the same for gems, eg:
+$ gem which rspec /Users/ztaylo43/.gem/ruby/2.4.4/gems/rspec-3.8.0/lib/rspec.rb This can be super helpful for those times when you&amp;rsquo;re debugging, and desperation leads you to follow the stacktrace into gemland.</description>
     </item>
     
   </channel>
