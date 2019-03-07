@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on </title>
+    <link>http://taylorzr.com/tags/</link>
+    <description>Recent content in Tags on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 06 Mar 2019 12:55:24 -0600</lastBuildDate>
+    
+	<atom:link href="http://taylorzr.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Direnv</title>
+      <link>http://taylorzr.com/tags/direnv/</link>
+      <pubDate>Wed, 06 Mar 2019 12:55:24 -0600</pubDate>
+      
+      <guid>http://taylorzr.com/tags/direnv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Postgres</title>
+      <link>http://taylorzr.com/tags/postgres/</link>
+      <pubDate>Wed, 06 Mar 2019 12:55:24 -0600</pubDate>
+      
+      <guid>http://taylorzr.com/tags/postgres/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ruby</title>
+      <link>http://taylorzr.com/tags/ruby/</link>
+      <pubDate>Thu, 14 Feb 2019 09:31:52 -0600</pubDate>
+      
+      <guid>http://taylorzr.com/tags/ruby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shell</title>
+      <link>http://taylorzr.com/tags/shell/</link>
+      <pubDate>Wed, 06 Mar 2019 12:55:24 -0600</pubDate>
+      
+      <guid>http://taylorzr.com/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
